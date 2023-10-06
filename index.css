@@ -155,10 +155,6 @@ main {
   align-items: center;
   justify-content: center;
   margin: auto;
-
-}
-.container-works img{
-  width: 100%;
 }
 
 .container-market {
@@ -236,6 +232,7 @@ main {
 .contant-us {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 }
 
 .us-btn {
@@ -248,7 +245,6 @@ main {
 
   border-radius: 4rem;
   height: 6rem;
-  margin: 2rem;
   font-size: 1rem;
   cursor: default;
 }
@@ -285,9 +281,9 @@ main {
 .button-container {
   border: 1px solid white;
   display: flex;
+  gap: 2rem;
   justify-content: center;
   border-radius: 2rem;
-  width: 50%;
   height: 5rem;
   padding: 10px 20px;
   align-items: center;
@@ -295,7 +291,6 @@ main {
 }
 
 .button-container label {
-  padding: 0rem 2rem 0rem 0rem;
   color: white;
 }
 
@@ -403,15 +398,36 @@ main {
 .quick-links span:hover {
   color: rgb(74, 74, 255);
 }
-.stock-img img{
- width: 100%;
-}
-.us-container img{
+.stock-img img {
   width: 100%;
 }
+.container-works img {
+  width: 60vw;
+}
+
 @media only screen and (max-width: 600px) {
   .nav {
     display: none;
   }
+  .container-works img {
+    width: 100%;
+  }
+  .us-container {
+    flex-direction: column;
+  }
+  .us-container img {
+    width: 100%;
+  }
+  .about-us-container {
+    flex-direction: column;
+  }
 
+  .contant-us {
+    gap: 1rem;
+  }
+
+  .button-container{
+    gap: 1rem;
+    font-size: 12px;
+  }
 }
