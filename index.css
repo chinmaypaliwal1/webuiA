@@ -47,15 +47,22 @@ body {
 .nav a:hover {
   color: blueviolet;
 }
-
+.floated-menu{
+margin: .5rem;
+cursor: pointer;
+}
+.floated-menu img{
+  width: 1.5rem;
+  background: transparent;
+}
 .btn {
   color: rgb(0, 0, 0);
   background: linear-gradient(172deg, #99ff33, #006699);
-  padding: 10px 22px;
-  border: 1px solid black;
+  padding: .3rem;
+ 
   border-radius: 1rem;
-  margin-left: 20px;
-  margin-top: -0.5rem;
+  margin-left: .2rem;
+  margin-bottom: .5rem;
   cursor: pointer;
   transition: 0.1s ease-in-out;
 }
@@ -299,8 +306,8 @@ main {
 .plains-container {
   border: 1px solid;
   border-radius: 2rem;
-  height: 38rem;
-  width: 55rem;
+  height: 40rem;
+  width: 800px;
   margin: auto;
   background: #fff;
 }
@@ -311,8 +318,9 @@ main {
   justify-content: center;
   border: 1px solid;
   border-radius: 0rem;
-  height: 38rem;
+  height: 40rem;
   width: 15rem;
+  margin: 2rem;
 
   background: #fff;
 }
@@ -320,10 +328,14 @@ main {
   width: 32px;
   margin: 0.28rem;
 }
+.pricing-font{
+  font-size: 3rem;
+  color: rgb(78, 23, 144);
+}
 
 .card-contant {
   text-align: center;
-  padding: 10px 10px;
+   padding: 10px 10px; 
 }
 
 .card-contant h4 {
@@ -341,15 +353,49 @@ main {
 .card-contant h2 {
   color: rgb(78, 23, 144);
 
+
   white-space: nowrap;
 }
 .card-contant h3 {
   color: rgb(83, 81, 84);
-  padding: 0.5rem 0 2rem 0;
+
   white-space: nowrap;
 }
 
-.subscribe-btn {
+.subscribe-btn1 {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(172deg, #99ff33, #006699);
+  color: black;
+  border: none;
+  border-radius: 1rem;
+  margin: 2rem;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 1.2rem;
+}
+.subscribe-btn2 {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(172deg, #99ff33, #006699);
+  color: black;
+  border: none;
+  border-radius: 1rem;
+  margin: 2rem;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 1.2rem;
+}
+.subscribe-btn3 {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(172deg, #99ff33, #006699);
+  color: black;
+  border: none;
+  border-radius: 1rem;
+  margin: 2rem;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 1.2rem;
+}
+.subscribe-btn4 {
   color: rgb(255, 255, 255);
   background: linear-gradient(172deg, #99ff33, #006699);
   color: black;
@@ -487,10 +533,25 @@ main {
     font-size: 10px;
   }
   .card-contant {
-    padding: 1px 1px;
+    padding: .5rem ; 
   }
-  .plains-container {
-    display: none;
+  .card-contant h2{
+    font-size: .6rem;
+  }
+  .card-contant h4{
+    margin: -2px;
+    font-size: 6px;
+  }
+  .plains-container{
+    width: 300px;
+    height: 380px;
+  }
+  .card-contant h3{
+    padding: 0;
+  }
+  .plains-container img{
+  width: 14px;
+  height: 9px;
   }
   .social-media img {
     width: 5rem;
@@ -500,6 +561,17 @@ main {
   }
   .logo img{
     width: 6rem;
+    margin-left: 1rem;
   
   }
+  .pricing-font { 
+    font-size: 15px;
+}
+.subscribe-btn1{
+  padding: 1rem;
+  width: 20rem;
+}
+.subscribe-btn2{display: none;}
+.subscribe-btn3{display: none;}
+.subscribe-btn4{display: none;}
 }
