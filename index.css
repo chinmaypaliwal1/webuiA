@@ -287,7 +287,6 @@ main {
   gap: 2rem;
   justify-content: center;
   border-radius: 2rem;
-  height: 5rem;
   padding: 10px 20px;
   align-items: center;
   margin-bottom: 4rem;
@@ -410,19 +409,19 @@ main {
 }
 
 @media only screen and (max-width: 600px) {
-  *{
+  * {
     font-size: 14px;
   }
   .nav {
     display: none;
   }
-  .stock-img{
+  .stock-img {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
   }
-  .stock-img img{
+  .stock-img img {
     width: 70vw;
   }
   .container-works img {
@@ -445,6 +444,7 @@ main {
   .button-container {
     gap: 1rem;
     font-size: 12px;
+    flex-direction: column;
   }
   main {
     top: 5rem;
@@ -488,5 +488,18 @@ main {
   }
   .card-contant {
     padding: 1px 1px;
+  }
+  .plains-container {
+    display: none;
+  }
+  .social-media img {
+    width: 5rem;
+  }
+  .logo{
+    margin: 1rem;
+  }
+  .logo img{
+    width: 6rem;
+  
   }
 }
