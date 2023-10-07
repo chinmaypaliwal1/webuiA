@@ -78,7 +78,7 @@ visibility: hidden;
   display: none;
 }
 .menu-icon img {
-  width: 1.5rem;
+  width: 1.5rem !important;
   background: transparent;
 }
 .btn {
