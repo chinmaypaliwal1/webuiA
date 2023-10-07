@@ -23,11 +23,21 @@
         </div>
         <div class="btn"><span>Get in Touch</span></div>
       </div>
-      <div class="floated-menu" onclick="toogglethreeline()">
+      <div class="menu-icon" onclick="toggleThreeLine()">
         <img src="img/menu.png" alt="" />
       </div>
     </div>
-
+    <div class="floated-menu">
+      <div><a href="">About</a></div>
+      <div><a href="">Services</a></div>
+      <div><a href="">Pricing </a></div>
+      <div><a href="">Market Place </a></div>
+      <div><a href="">Become Efilate </a></div>
+      <div class="btn">
+        <span>Login</span>
+      </div>
+      <div class="btn"><span>Get in Touch</span></div>
+    </div>
     <main>
       <div class="contant-box">
         <div class="intro">
@@ -319,7 +329,17 @@
       </div>
     </main>
     <script>
-      // function toogglethreeline() = document.getElementsByClassName('');
+      function toggleThreeLine() {
+        var element = document.querySelector(".floated-menu");
+        console.log(element);
+        if (element) {
+          if (element.style.visibility === "visible") {
+            element.style.visibility = "hidden";
+          } else {
+            element.style.visibility = "visible";
+          }
+        }
+      }
     </script>
   </body>
 </html>
