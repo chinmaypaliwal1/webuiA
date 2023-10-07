@@ -84,18 +84,16 @@ main {
 
 .heading {
   font-size: 3rem;
-
 }
 
 .sub-heading {
   font-size: 1.8rem;
-  
+
   color: rgb(93, 93, 248);
 }
 
 .btn-box {
   display: flex;
-  
 }
 
 .secondry-btn {
@@ -104,8 +102,7 @@ main {
   padding: 10px 22px;
   border-radius: 1rem;
   cursor: pointer;
-  margin: .3rem;
-
+  margin: 0.3rem;
 }
 
 .secondry-btn:hover {
@@ -124,13 +121,15 @@ main {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  
+
   flex-direction: row;
-  justify-content: center;}
+  justify-content: center;
+}
+.second-box {
+  display: flex;
+}
 
 .box {
- 
- 
   background: rgb(253, 252, 252);
   color: black;
   text-align: center;
@@ -172,11 +171,10 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  
+
   background: linear-gradient(172deg, #99ff33, #006699);
   border-radius: 1rem;
 }
-
 
 .img-contant h1 {
   font-size: rem;
@@ -403,6 +401,7 @@ main {
 .quick-links span:hover {
   color: rgb(74, 74, 255);
 }
+
 .stock-img img {
   width: 100%;
 }
@@ -411,17 +410,29 @@ main {
 }
 
 @media only screen and (max-width: 600px) {
+  *{
+    font-size: 14px;
+  }
   .nav {
     display: none;
   }
-  .container-works img {
+  .stock-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+  }
+  .stock-img img{
+    width: 70vw;
+  }
+  .container-works img {
+    width: 70vw;
   }
   .us-container {
     flex-direction: column;
   }
   .us-container img {
-    width: 100%;
+    width: 54vw;
   }
   .about-us-container {
     flex-direction: column;
@@ -431,45 +442,51 @@ main {
     gap: 1rem;
   }
 
-  .button-container{
+  .button-container {
     gap: 1rem;
     font-size: 12px;
   }
-  main{
+  main {
     top: 5rem;
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
   }
-  .intro{
+  .intro {
     margin-left: 3rem;
   }
   .heading {
     font-size: 2rem;
     white-space: nowrap;
-}
-.box{
-  margin: 0.5rem;
-  width: 11rem;
-  padding: 1rem;
-}
-.container-market{
-  width: 0;
-}
-.m-heading{
-  font-size: 1.6rem;
-}
-.img-contant{
-padding: 1.7rem;
-}
-.img-contant h1{
-  font-size: 1.5rem;
-  padding: .9rem;
-}
-.img-contant img{
-  width: 8rem;
-  height: 8rem;
-}
-.coming-soon-btn{
-  margin-top: 5px;
-  padding: .5rem;
-  font-size: 10px;
-}
+  }
+  .box {
+    margin: 0.5rem;
+    padding: 1rem;
+  }
+  .container-market {
+    width: 0;
+  }
+  .m-heading {
+    font-size: 1.6rem;
+  }
+  .img-contant {
+    padding: 1.7rem;
+    flex-direction: column;
+  }
+  .img-contant h1 {
+    font-size: 1.5rem;
+    padding: 0.9rem;
+  }
+  .img-contant img {
+    width: 8rem;
+    height: 8rem;
+  }
+  .coming-soon-btn {
+    margin-top: 5px;
+    padding: 0.5rem;
+    font-size: 10px;
+  }
+  .card-contant {
+    padding: 1px 1px;
+  }
 }
